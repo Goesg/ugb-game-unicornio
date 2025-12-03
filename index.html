@@ -9,10 +9,31 @@
 </head>
 <body>
     <div id="container">
+        <!-- HUD: Vidas e Placar -->
+        <div id="hud">
+            <div id="vidas-container">
+                <span class="hud-label">Vidas:</span>
+                <div id="vidas"></div>
+            </div>
+            <div id="placar-container">
+                <span class="hud-label">Pontuação:</span>
+                <span id="placar">0</span>
+            </div>
+        </div>
+
         <div id="fundoGame">
             <div id="inicio" onclick="start()">
                 <h1>Unicórnio Rambo Fofo</h1>
                 <p>W para mover para cima, S para mover para baixo, D para disparar míssil</p>
+            </div>
+        </div>
+
+        <!-- Tela de Game Over -->
+        <div id="gameOver">
+            <h1>Fim de Jogo!</h1>
+            <p>Sua pontuação: <span id="pontuacaoFinal">0</span></p>
+            <div id="btnReiniciar" onclick="reiniciarJogo()">
+                <h3>Jogar Novamente</h3>
             </div>
         </div>
     </div>
